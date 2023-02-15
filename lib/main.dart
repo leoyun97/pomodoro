@@ -14,7 +14,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         backgroundColor: const Color(0xFFE7676C),
         textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             color: Color(0xFF232B55),
           ),
         ),
