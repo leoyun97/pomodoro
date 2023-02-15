@@ -15,7 +15,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Theme.of(context).backgroundColor,
         body: Column(
           children: [
-            SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             Flexible(
               flex: 1,
               child: Container(
@@ -34,15 +36,23 @@ class _HomeScreenState extends State<HomeScreen> {
               flex: 3,
               child: Center(
                 child: IconButton(
-                  icon: const Icon(Icons.play_circle_outline_outlined,color: Colors.white,),
+                  icon: const Icon(
+                    Icons.play_circle_outline_outlined,
+                  ),
                   onPressed: () {},
                   iconSize: 90,
+                  color: Theme.of(context).cardColor,
                 ),
               ),
             ),
             Flexible(
               flex: 1,
-              child: Container(),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  color: Theme.of(context).cardColor,
+                ),
+              ),
             ),
           ],
         ),
